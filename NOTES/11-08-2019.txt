@@ -1,0 +1,23 @@
+CATATAN UNTUK PROGRAMMER ANDROID
+
+__________________________________________________
+
+android    								web
+---------------------------------------------
+
+setelah login...
+nyimpan sebagai session...
+Dia kirimkan ke web service...
+
+nyediakan field 'Flag'
+
+jika sudah ada session flag = 1 
+
+note : Dia = pengguna android.
+1) jika Dia baru login pertama login di perangkat android informasi di field FLEG = 0
+2) jika dia sudah login ke sebuah perangkat maka nilai FLEG di update menjadi 1
+3) jika dia logout maka nilai FLEG di update menjadi 0 lagi.
+
+add field Flakes in table app_users
+dan di jadikan sebagai session login dan logout.
+_________________________________________________________

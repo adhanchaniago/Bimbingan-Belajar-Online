@@ -1,0 +1,168 @@
+
+
+API 
+-----------------------------
+
+
+
+Api Supports    :
+http://appsbilik.site/api/apiSupports
+
+
+
+Api Abouts      : 
+http://appsbilik.site/api/apiAbouts
+
+
+
+__________________________________________________________________________________________________
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// MODUL TENTOR
+
+API login Tentor - modul login tentor :
+http://appsbilik.site/api/loginApiUsers?username=Rian&password=rian&role=2
+
+
+MENU PERKEMBANGAN : 
+-------------------------------------------------------------
+API Modul Perkembangan (banyak siswa yang dimiliki tentor ) : 
+http://appsbilik.site/api/apiDataSiswaTentor?idTentor=003
+
+API Indikator Penilaian - Bagian Perkembangan : 
+http://appsbilik.site/api/apiIndikator
+
+PENILAIAN SISWA PADA MODUL TENTOR
+http://appsbilik.site/api/apiPerkembangan_modulTentor?idTentor=001
+
+
+MENU UPLOAD ARTIKEL / LOMBA ARTIKEL
+-----------------------------------
+// API list Lomba Artikel yang di adakan oleh admin bilik ilmu. di tampilkan di modul android bagian tentor
+http://appsbilik.site/api/listLombaArtikel
+
+upload ke table detaillombaartikel
+
+
+idUnix  |  kodePengguna | idLomba_tb_lomba | file   | 
+---------------------------------------------------------
+ has7s  |    002 		|     1    		   | -      |  
+
+
+
+MENU MURID / LIST DATA MURID YANG TERIKAT TENTOR
+------------------------------------------------
+// list data - data murid yang menjadi siswa seorang tentor 
+
+http://appsbilik.site/api/listSiswaFromTentor?idTentor=002
+
+
+MENU TENTOR / LIST DATA TENTOR YANG TERIKAT SISWA
+------------------------------------------------
+http://appsbilik.site/api/listTentorFromSiswa?idSiswa=004
+
+
+
+MENU PROFIT 
+------------------------------------------------
+
+
+
+MENU DETAIL PROFIT 
+------------------------------------------------
+
+
+
+MENU JADWAL 
+------------------------------------------------
+http://appsbilik.site/api/dataJadwalAjarTentor?idTentor=001
+
+Keterangan :
+
+Action 'Selesai' pada halaman JADWAL, akan melakukan Update pada table 'detailKursus' di field 'statusKursus=Selesai' atau dari status 'aktif' di update menjadi Selesai, berdasarkan 'kodeKursus' nya serta idBidangstudinya.
+
+url action Selesai:
+
+http://appsbilik.site/api/updateJadwalAjarTentorBerdasarkan?kodeKursus=KB19000013&idBidang=1
+
+
+
+
+
+
+__________________________________________________________________________________________________
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// MODUL SISWA
+__________________________________________________________________________________________________
+==================================================================================================
+
+
+API login siswa  - modul login siswa: 
+http://appsbilik.site/api/loginApiUsers?username=Winda&password=winda&role=3
+
+// API Laporan Perkembangan siswa on android app - modul Siswa
+http://appsbilik.site/api/apiPerkembangan_modulSiswa?idSiswa=003
+
+
+DASHBOARD 
+Data Jadwal
+http://appsbilik.site/api/dataJadwalKursusSiswa?idSiswa=002
+
+
+
+MENU JADWAL
+------------------------------------------------
+http://appsbilik.site/api/dataJadwalKursusSiswa?idSiswa=002
+
+
+MENU TENTOR YANG MENJADI PENGAJAR SEORANG SISWA TERTENTU
+------------------------------------------------
+http://appsbilik.site/api/listTentorFromSiswa?idSiswa=003
+
+
+
+MENU PERKEMBANGAN / LIST DATA HASIL PENILAIAN : 
+-------------------------------------------------------------
+http://appsbilik.site/api/apiPerkembangan_modulSiswa?idSiswa=003
+
+
+
+MENU TRANSAKSI 
+------------------------------------------------
+http://appsbilik.site/api/transaksi?idSiswa=003
+
+MENU DETAIL TRANSKASI 
+------------------------------------------------
+http://appsbilik.site/api/transaksi?idSiswa=003
+
+
+
+MENU KUIS 
+------------------------------------------------
+
+
+	API MULAI KUIS / DATA KUIS 
+	------------------------------------------------
+
+
+	API SIMPAN SKOR KUIS 
+	------------------------------------------------
+
+
+
+
+__________________________________________________________________________________________________
+==================================================================================================
+
+
+
+
+Dummy data : 
+
+ id     |  role | username | password 
+ --------------------------------------
+ 001 	| Guru  | Andi     | andi 
+ 002    | Guru  | Rian     | rian 
+ 003    | siswa | Winda    | winda 
+ 004    | siswa | Wilda    | wilda 
